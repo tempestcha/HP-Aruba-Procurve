@@ -109,14 +109,13 @@ def main():
     # Define the configuration commands
     config_commands = [
         "conf t",
-        "no qos protocol arp",
-	      "aruba-central disable",
-      	"ip dns server-address priority 1 192.168.0.1",
-	      "ip dns server-address priority 2 192.168.0.1",
-	      "no tftp client",
-	      "activate software-update disable",
-	      "activate provision disable",
-        "no logging 192.168.0.1"
+	    "aruba-central disable",
+	    "ip dns server-address priority 1 192.168.X.X",
+	    "ip dns server-address priority 2 192.168.X.X",
+	    "no tftp client",
+	    "activate software-update disable",
+	    "activate provision disable",
+        "logging 192.168.X.X"
     ]
 
     # Loop through each IP address
